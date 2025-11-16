@@ -47,8 +47,8 @@ export default function Slide01() {
         }}>
           <p className="text-xl text-gray-300 space-y-3">
             {/* ⭐ Personalize com suas informações */}
-            <span className="block font-semibold text-blue-300">Seminário de Estatística e Ciência de Dados</span>
-            <span className="block">Graduação em Tecnologia/Engenharia</span>
+            <span className="block font-semibold text-blue-300">Seminário de Estatística Aplicada</span>
+            <span className="block">Pedro Ernesto, Gabriel Mensor, Matheus Constante e Rafael</span>
             <span className="block text-lg text-gray-400">Novembro/2025</span>
           </p>
         </div>
