@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design otimizado para projetor de faculdade */
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --accent: #3b82f6;
+  --accent-light: #60a5fa;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: var(--text-primary);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Container da apresentação - Otimizado para projetor */
+.slide-container {
+  @apply min-h-screen flex items-center justify-center p-8 md:p-12;
+}
+
+.slide-content {
+  @apply rounded-3xl shadow-2xl p-10 md:p-16 max-w-7xl w-full;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Animações suaves */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-animate {
+  animation: slideIn 0.4s ease-out;
+}
+
+/* Fórmulas matemáticas - Destaque visual */
+.math-display {
+  @apply text-4xl md:text-5xl my-6 text-center font-bold tracking-wide;
+  color: #60a5fa;
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  padding: 1.5rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 1rem;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.math-inline {
+  @apply inline-block px-3 py-1 text-xl font-bold;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.15);
+  border-radius: 0.5rem;
+}
+
+/* Cards melhorados - Visual mais limpo */
+.card-modern {
+  @apply rounded-2xl p-6 transition-all duration-300;
+  background: linear-gradient(135deg, rgba(51, 65, 85, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%);
+  border: 2px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+/* Destaque de código - Melhor contraste */
+.code-block {
+  @apply rounded-xl overflow-hidden shadow-2xl;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Títulos - Mais impactantes */
+.slide-title {
+  @apply text-5xl md:text-6xl font-extrabold mb-8 text-center;
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.slide-subtitle {
+  @apply text-3xl md:text-4xl font-bold mb-6;
+  color: #60a5fa;
+}
+
+/* Explicações das fórmulas */
+.formula-explanation {
+  @apply text-xl text-center mt-4 px-6 py-4 rounded-xl;
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid #3b82f6;
+  color: #cbd5e1;
+  font-style: italic;
+}
+
+/* Badges e tags */
+.badge {
+  @apply inline-block px-4 py-2 rounded-full text-sm font-semibold;
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+/* Botões melhorados */
+.btn-primary {
+  @apply px-6 py-3 rounded-xl font-bold transition-all duration-300;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+}
+
+/* Ajustes para legibilidade em projetor */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  
+  .slide-content {
+    padding: 4rem;
+  }
+}
+
