@@ -1,226 +1,334 @@
-# 📊 Seminário: Independência Estatística e suas Aplicações
+# 📊 Independência Estatística - Apresentação Interativa
 
-## Pacote Completo de Materiais para Apresentação Universitária
+<div align="center">
 
-Este repositório contém todos os materiais necessários para uma apresentação de seminário de **40 minutos** sobre **Independência Estatística**, destinado a estudantes de graduação em tecnologia/engenharia.
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)
+![Python](https://img.shields.io/badge/Python-3.11+-green?style=for-the-badge&logo=python)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=for-the-badge&logo=tailwindcss)
 
----
+**Seminário universitário completo de 40 minutos sobre Independência Estatística**
 
-## 📁 Estrutura dos Arquivos
+[🚀 Demo](#-como-executar) • [📚 Documentação](#-estrutura-do-projeto) • [🎨 Screenshots](#-preview) • [📖 Guias](#-documentação)
 
-### 1️⃣ **`01_roteiro_slides.md`**
-- **Descrição:** Roteiro detalhado com o conteúdo de todos os 18 slides
-- **Conteúdo:** 
-  - Fundamentos teóricos
-  - Exemplos práticos
-  - Aplicações em Machine Learning
-  - Conclusões
-- **Tempo estimado:** 30-35 minutos de apresentação
-
-### 2️⃣ **`02_exemplos_python.py`**
-- **Descrição:** Códigos Python completos e comentados
-- **Conteúdo:**
-  - Exemplo 1: Simulação de independência com dados (1 milhão de lançamentos)
-  - Exemplo 2: Teste Qui-Quadrado de independência (academia)
-  - Código pronto para execução
-- **Bibliotecas necessárias:** `numpy`, `scipy`
-
-### 3️⃣ **`03_resumo_tecnico.md`**
-- **Descrição:** Resumo técnico de 1-2 páginas
-- **Conteúdo:**
-  - Definições formais
-  - Diferença entre independência e dependência
-  - Teste Qui-Quadrado explicado
-  - Aplicações em Ciência de Dados
-  - Referências e links úteis (5 recursos)
-
-### 4️⃣ **`04_banco_questoes.md`**
-- **Descrição:** 5 perguntas e respostas para estudo
-- **Conteúdo:**
-  - Questões conceituais
-  - Questões de cálculo
-  - Questões aplicadas (Python e ML)
-  - Respostas completas e detalhadas
+</div>
 
 ---
 
-## 🚀 Como Utilizar este Material
+## 🎯 Sobre o Projeto
 
-### Para Apresentadores:
+Este repositório contém uma **apresentação interativa completa** sobre Independência Estatística, desenvolvida para um seminário universitário de 40 minutos. O projeto inclui:
 
-1. **Preparação dos Slides:**
-   - Use o arquivo `01_roteiro_slides.md` como base
-   - Crie slides visuais no PowerPoint/Google Slides seguindo o roteiro
-   - Cada "Slide X" corresponde a um slide da apresentação
-
-2. **Demonstrações em Python:**
-   - Execute o arquivo `02_exemplos_python.py` **antes** da apresentação
-   - Anote os resultados para mostrar nos slides 11 e 15
-   - Opção: Execute ao vivo durante a apresentação (mais impactante!)
-
-3. **Distribuição:**
-   - Compartilhe `03_resumo_tecnico.md` com a turma após a apresentação
-   - Disponibilize `04_banco_questoes.md` para estudo
-
-### Para Estudantes (Audiência):
-
-1. Siga a apresentação pelos slides
-2. Teste os códigos Python no seu ambiente
-3. Revise o resumo técnico após a apresentação
-4. Use o banco de questões para autoavaliação
+- ✅ **Frontend Next.js** com 18 slides interativos
+- ✅ **Design profissional** otimizado para projetor de faculdade
+- ✅ **Códigos Python** testados (simulação Monte Carlo + teste χ²)
+- ✅ **Fórmulas matemáticas** com explicações de como ler
+- ✅ **Material completo** (slides, resumo técnico, banco de questões)
+- ✅ **Documentação extensiva** e guias de uso
 
 ---
 
-## 💻 Requisitos Técnicos
+## ✨ Funcionalidades
 
-### Python e Bibliotecas
+### 🎨 **Frontend Interativo**
 
-**Versão do Python:** 3.7 ou superior
+- Navegação por teclado (← → Home End Espaço)
+- Navegação por mouse (botões laterais + menu dropdown)
+- Barra de progresso visual
+- Contador de slides
+- Syntax highlighting para código Python
+- Fórmulas matemáticas formatadas
+- Design responsivo e dark mode
+- Animações suaves
 
-**Instalação das dependências:**
+### 📊 **Conteúdo Completo**
+
+**18 Slides organizados em 4 blocos:**
+
+1. **Fundamentos (Slides 1-6)** - Conceitos básicos e definições
+2. **Exemplos e Contraste (Slides 7-11)** - Casos práticos + Simulação Python
+3. **Testes e Aplicações (Slides 12-16)** - Qui-Quadrado + Machine Learning
+4. **Conclusão (Slides 17-18)** - Resumo + Perguntas
+
+### 🐍 **Exemplos em Python**
+
+- **Simulação:** 1 milhão de lançamentos de dados verificando independência
+- **Teste χ²:** Exemplo real com dados de academia de ginástica
+- Código comentado e pronto para executar
+
+---
+
+## 🚀 Como Executar
+
+### **Pré-requisitos**
+
+- Node.js 18+ ([Download](https://nodejs.org/))
+- npm ou yarn
+
+### **Instalação Rápida**
 
 ```bash
-pip install numpy scipy matplotlib seaborn
+# 1. Clone o repositório
+git clone https://github.com/Theordep/Independecia-Estatistica-Python.git
+cd Independecia-Estatistica-Python
+
+# 2. Instale as dependências
+npm install
+
+# 3. Execute a apresentação
+npm run dev
 ```
 
-**Bibliotecas utilizadas:**
-- `numpy` (versão 2.3.2 ou compatível) - Simulações e arrays
-- `scipy` (mais recente) - Teste Qui-Quadrado
-- `matplotlib` / `seaborn` (opcional) - Visualizações
+Acesse: **http://localhost:3000** 🎉
 
-### Executando os Exemplos
+### **Executar Códigos Python**
 
 ```bash
 python 02_exemplos_python.py
 ```
 
-**Tempo de execução:** ~2-3 segundos (simulação de 1 milhão de lançamentos)
+---
 
-**Saída esperada:**
-- Probabilidades calculadas da simulação de dados
-- Resultados do teste Qui-Quadrado
-- Interpretação estatística dos resultados
+## 📁 Estrutura do Projeto
+
+```
+trabalho-estatistica/
+│
+├── 📚 Materiais Originais (Markdown)
+│   ├── 01_roteiro_slides.md          # Roteiro detalhado dos 18 slides
+│   ├── 02_exemplos_python.py         # Códigos Python testados
+│   ├── 03_resumo_tecnico.md          # Resumo de 1-2 páginas
+│   ├── 04_banco_questoes.md          # 5 perguntas e respostas
+│   ├── GUIA_DE_APRESENTACAO.md       # Guia completo de apresentação
+│   ├── SUMARIO_EXECUTIVO.md          # Visão geral do projeto
+│   └── INDICE_VISUAL.md              # Mapa de navegação
+│
+├── 🎨 Frontend Next.js
+│   ├── app/                          # Aplicação Next.js
+│   ├── components/                   # Componentes React
+│   │   ├── slides/                   # 18 slides completos
+│   │   ├── CodeBlock.tsx             # Highlight de código
+│   │   ├── MathFormula.tsx           # Fórmulas matemáticas
+│   │   └── ...
+│   ├── data/                         # Dados dos slides
+│   ├── public/images/                # Imagens da apresentação
+│   └── ...
+│
+└── 📖 Documentação
+    ├── README_FRONTEND.md            # Documentação do frontend
+    ├── QUICK_START.md                # Início rápido (3 passos)
+    ├── GUIA_IMAGENS.md               # Onde adicionar imagens
+    ├── MELHORIAS_DESIGN.md           # Detalhes do design
+    └── FRONTEND_COMPLETO.md          # Resumo das melhorias
+```
 
 ---
 
-## 📋 Formato da Apresentação
+## 🎨 Preview
 
-### ⏰ Tempo Total: 40 minutos
+### **Slide de Título**
+```
+┌────────────────────────────────────────┐
+│             📊                         │
+│                                        │
+│   Independência Estatística            │
+│   O Pilar Oculto da Análise de Dados  │
+│                                        │
+│   Entendendo como eventos se relacionam│
+└────────────────────────────────────────┘
+```
 
-- **30-35 minutos:** Apresentação dos slides
-- **5-10 minutos:** Perguntas e discussão
+### **Fórmulas com Explicações**
+```
+┌────────────────────────────────────────┐
+│   P(A ∩ B) = P(A) × P(B)              │
+│                                        │
+│   💡 Como ler: "P de A interseção B"  │
+│   é igual a "P de A" VEZES "P de B"   │
+│   O símbolo ∩ significa "E"           │
+└────────────────────────────────────────┘
+```
 
-### 📊 Estrutura dos Slides (18 slides)
+### **Código Python com Highlighting**
+```python
+import numpy as np
 
-| Bloco | Slides | Tempo | Tema |
-|-------|--------|-------|------|
-| **1. Fundamentos** | 1-6 | 10 min | Conceitos básicos e definições |
-| **2. Exemplos** | 7-11 | 10 min | Independência vs. dependência + Simulação |
-| **3. Testes e Aplicações** | 12-16 | 10-15 min | Qui-Quadrado + ML |
-| **4. Conclusão** | 17-18 | 5 min | Resumo + Perguntas |
+# Simular 1 milhão de lançamentos
+N = 1000000
+dado1 = np.random.randint(1, 7, size=N)
+dado2 = np.random.randint(1, 7, size=N)
 
----
+# Verificar independência
+p_A = np.mean(dado1 % 2 == 0)
+p_B = np.mean(dado2 > 4)
+p_A_e_B = np.mean((dado1 % 2 == 0) & (dado2 > 4))
 
-## 🎯 Público-Alvo
-
-- **Nível:** Graduação em Tecnologia / Engenharia
-- **Pré-requisitos:** Noções básicas de probabilidade
-- **Conhecimento de Python:** Desejável, mas não obrigatório
-
----
-
-## 📚 Tópicos Cobertos
-
-### Teoria
-✅ Definição de independência estatística  
-✅ Regra da multiplicação  
-✅ Probabilidade condicional  
-✅ Independência vs. dependência  
-✅ Independência vs. eventos mutuamente exclusivos  
-
-### Prática
-✅ Simulação Monte Carlo (1 milhão de lançamentos)  
-✅ Teste Qui-Quadrado de Independência  
-✅ Implementação em Python (NumPy + SciPy)  
-✅ Interpretação de p-valores  
-
-### Aplicações
-✅ Machine Learning (Naive Bayes)  
-✅ Seleção de features  
-✅ Análise de dados categóricos  
-✅ Tabelas de contingência  
+print(f"P(A) × P(B) ≈ P(A ∩ B): {p_A * p_B:.4f} ≈ {p_A_e_B:.4f}")
+```
 
 ---
 
-## 🔗 Recursos Adicionais
+## 📖 Documentação
 
-### Links Úteis (incluídos no resumo técnico):
+### **Guias Disponíveis:**
 
-1. **SciPy Documentation** - Função `chi2_contingency`
-2. **Khan Academy** - Vídeos sobre independência
-3. **Naive Bayes Explained** - Artigo sobre aplicações
-4. **PennState STAT 414** - Material universitário
-5. **Python Data Science Handbook** - Exemplos práticos
-
----
-
-## ✅ Checklist para a Apresentação
-
-### Antes da Apresentação:
-- [ ] Ler todo o roteiro de slides
-- [ ] Executar os códigos Python e verificar resultados
-- [ ] Preparar slides visuais (PowerPoint/Google Slides)
-- [ ] Testar equipamento (projetor, microfone)
-- [ ] Imprimir resumo técnico (opcional)
-
-### Durante a Apresentação:
-- [ ] Seguir o tempo de cada bloco (10-10-15-5 minutos)
-- [ ] Demonstrar códigos Python (slides 10 e 15)
-- [ ] Interagir com a audiência
-- [ ] Responder perguntas claramente
-
-### Após a Apresentação:
-- [ ] Compartilhar materiais com a turma
-- [ ] Disponibilizar códigos (GitHub/Drive)
-- [ ] Coletar feedback
-- [ ] Adicionar ao banco de questões da disciplina
+| Arquivo | Descrição |
+|---------|-----------|
+| [`README_FRONTEND.md`](README_FRONTEND.md) | Documentação completa do frontend |
+| [`QUICK_START.md`](QUICK_START.md) | Início rápido em 3 passos |
+| [`GUIA_IMAGENS.md`](GUIA_IMAGENS.md) | Onde e como adicionar imagens |
+| [`GUIA_DE_APRESENTACAO.md`](GUIA_DE_APRESENTACAO.md) | Guia detalhado de apresentação |
+| [`MELHORIAS_DESIGN.md`](MELHORIAS_DESIGN.md) | Detalhes técnicos do design |
+| [`SUMARIO_EXECUTIVO.md`](SUMARIO_EXECUTIVO.md) | Visão geral executiva |
+| [`INDICE_VISUAL.md`](INDICE_VISUAL.md) | Mapa de navegação |
 
 ---
 
-## 📝 Material Obrigatório (Conforme Solicitado)
+## 🎯 Conteúdo dos Slides
 
-✅ **Slides:** 18 slides (dentro do limite de 15-20)  
-✅ **Exemplos em Python:** 2 exemplos completos e comentados  
-✅ **Resumo escrito:** 1-2 páginas com referências  
-✅ **Banco de questões:** 5 perguntas e respostas  
+### **Bloco 1: Fundamentos (10 min)**
+1. Título da apresentação
+2. Roteiro
+3. Revisão: O que é Probabilidade?
+4. O Conceito de Independência ⭐
+5. A Definição Matemática (Regra da Multiplicação)
+6. A Definição Alternativa (Probabilidade Condicional)
+
+### **Bloco 2: Exemplos e Contraste (10 min)**
+7. Independência vs. Dependência
+8. Erro Comum: Independência ≠ Mutuamente Exclusivos ⭐
+9. Exemplo Prático em Python (Introdução)
+10. Código Python - Simulação 💻
+11. Resultados da Simulação
+
+### **Bloco 3: Testes e Aplicações (10-15 min)**
+12. E no Mundo Real? (Tabelas de Contingência)
+13. Teste Qui-Quadrado (χ²)
+14. Exemplo Python - Academia
+15. Código Python - Teste χ² 💻
+16. Por que isso Importa? (Machine Learning) ⭐
+
+### **Bloco 4: Conclusão (5 min)**
+17. Resumo
+18. Conclusão e Perguntas
 
 ---
 
-## 👥 Créditos e Informações
+## 🐍 Exemplos Python
 
-**Tema:** Independência Estatística e suas Aplicações  
-**Disciplina:** Estatística / Ciência de Dados  
-**Nível:** Graduação  
-**Data:** Novembro/2025  
-**Duração:** 40 minutos (35 min apresentação + 5 min perguntas)  
+### **Exemplo 1: Simulação de Independência**
+
+```python
+import numpy as np
+
+N = 1000000
+dado1 = np.random.randint(1, 7, size=N)
+dado2 = np.random.randint(1, 7, size=N)
+
+A = (dado1 % 2 == 0)
+B = (dado2 > 4)
+
+p_A = np.mean(A)
+p_B = np.mean(B)
+p_A_e_B = np.mean(A & B)
+
+print(f"P(A) × P(B) = {p_A * p_B:.4f}")
+print(f"P(A ∩ B) = {p_A_e_B:.4f}")
+# Resultado: ~0.1666 ≈ ~0.1666 ✓ Independentes!
+```
+
+### **Exemplo 2: Teste Qui-Quadrado**
+
+```python
+from scipy.stats import chi2_contingency
+import numpy as np
+
+observed = np.array([
+    [50, 20],  # Manhã: Básico, Premium
+    [30, 30],  # Tarde: Básico, Premium
+    [40, 60]   # Noite: Básico, Premium
+])
+
+chi2, p_value, dof, expected = chi2_contingency(observed)
+
+print(f"χ² = {chi2:.4f}")
+print(f"p-valor = {p_value:.6f}")
+# Resultado: p < 0.05 → Rejeitamos H0 (são dependentes!)
+```
 
 ---
 
-## 📧 Suporte
+## 🎨 Design
 
-Para dúvidas sobre o conteúdo:
-- Revise o arquivo `03_resumo_tecnico.md` (seção de referências)
-- Consulte os links úteis fornecidos
-- Execute os códigos Python para experimentar
+### **Características:**
+
+- ✅ **Fundo escuro** (#0f172a) - Alto contraste para projetor
+- ✅ **Fontes grandes** (20-70px) - Legível do fundo da sala
+- ✅ **Cores vibrantes** - Azul brilhante (#60a5fa) para destaques
+- ✅ **Fórmulas explicadas** - Todas as fórmulas têm explicação de como ler
+- ✅ **Cards modernos** - Glassmorphism com bordas iluminadas
+- ✅ **Animações suaves** - Transições profissionais
+
+### **Otimizado para:**
+
+- 🖥️ Projetor de faculdade
+- 👥 Audiência de 30-50 pessoas
+- 🎯 Apresentação de 40 minutos
+- 📺 Resolução 1920x1080 (Full HD)
 
 ---
 
-## 📄 Licença
+## 🛠️ Tecnologias
+
+### **Frontend**
+- Next.js 14
+- TypeScript 5.3
+- Tailwind CSS 3.4
+- React 18
+- React Syntax Highlighter
+
+### **Python**
+- Python 3.11+
+- NumPy 2.3.2
+- SciPy 1.16.3
+
+---
+
+## 📚 Referências
+
+1. [Documentação SciPy - chi2_contingency](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html)
+2. [Khan Academy - Independência](https://pt.khanacademy.org/math/statistics-probability/probability-library/conditional-probability-independence/v/independent-events)
+3. [PennState STAT 414](https://online.stat.psu.edu/stat414/lesson/4/4.1)
+
+---
+
+## 📝 Licença
 
 Este material foi desenvolvido para fins educacionais.  
 Sinta-se livre para adaptar e utilizar em contextos acadêmicos.
 
 ---
 
-**Boa apresentação! 🎉**
+## 👥 Autor
 
+**Desenvolvido para:** Seminário de Estatística e Ciência de Dados  
+**Tema:** Independência Estatística e suas Aplicações  
+**Duração:** 40 minutos (35 min apresentação + 5 min perguntas)  
+**Nível:** Graduação em Tecnologia/Engenharia  
+**Data:** Novembro/2025
+
+---
+
+## ⭐ Agradecimentos
+
+Se este material foi útil para você, considere dar uma ⭐ no repositório!
+
+---
+
+<div align="center">
+
+**[⬆ Voltar ao topo](#-independência-estatística---apresentação-interativa)**
+
+Made with ❤️ and 📊
+
+</div>
