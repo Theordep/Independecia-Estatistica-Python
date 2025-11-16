@@ -44,8 +44,8 @@ export default function Slide18() {
 
       {/* Créditos */}
       <div className="mt-12 text-center text-sm text-gray-500 dark:text-gray-500">
-        <p>Seminário de Estatística e Ciência de Dados</p>
-        <p className="mt-1">Graduação em Tecnologia/Engenharia • Novembro/2025</p>
+        <p>Seminário de Estatística Aplicada</p>
+        <p className="mt-1">Pedro Ernesto, Gabriel Mensor, Matheus Constante e Rafael • Novembro/2025</p>
       </div>
     </div>
   )
